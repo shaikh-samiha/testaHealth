@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestaHealth | Award-Winning Health Technology Innovators</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+<img src="logo.png" alt="TestaHealth Logo" class="h-8 sm:h-10 md:h-12 lg:h-14 w-auto">
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#technology" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Technology</a>
+                    <a href="#contact" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#about" class="bg-blue-50 border-blue-500 text-blue-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">About</a>
+                <a href="#technology" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Technology</a>
+                <a href="#awards" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Awards</a>
+                <a href="#partners" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Partners</a>
+                <a href="#contact" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="sm:text-center md:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span class="block">Innovating</span>
+                        <span class="block text-blue-600">Health Technology</span>
+                    </h1>
+                    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                        At TestaHealth Labs, we believe that healthcare should be faster, smarter, and safer—for everyone.
+                         Our project merges cutting-edge technology with compassionate care, transforming how blood tests and diagnostics are conducted, shared, and trusted.
+
+
+                    </p>
+                    <div class="mt-5 sm:mt-8 sm:flex sm:justify-center md:justify-start">
+                        <div class="rounded-md shadow">
+                            <a href="#technology" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                                Explore Our Technology
+                            </a>
+                        </div>
+                        <div class="mt-3 sm:mt-0 sm:ml-3">
+                            <a href="#contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 sm:mt-16 lg:mt-0">
+        <img class="rounded-lg shadow-xl w-full h-auto max-w-3xl mx-auto" src="download.jpg" alt="Modern laboratory facilities">
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="py-16 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="mb-8 lg:mb-0">
+            <img src="bio.png" alt="Bioprocessing Excellence" class="rounded-lg shadow-lg w-full h-auto max-w-4xl mx-auto">
+                </div>
+                <div class="lg:self-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        About Testa Center
+                    </h2>
+                    <p class="mt-3 text-lg text-gray-500">
+                        Testa Center is an open and friendly testbed for biological production, leveraging state-of-the-art bioprocessing labs, equipment, and expertise to drive health technology innovations.
+                    </p>
+                    <div class="mt-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-base text-gray-500">
+                                    We provide an authentic production environment where innovators can develop, <br>
+                                    test, and validate their healthcare solutions in a setting that mirrors real-world conditions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex mt-3">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-base text-gray-500">
+                                     We bring together scientists, clinicians, engineers,
+                                      and digital health experts to create better solutions,
+                                       faster—because great ideas grow stronger through teamwork.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex mt-3">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-base text-gray-500">
+                                Every project we support is driven by one goal:
+                                to improve patient care through high-quality, 
+                                 accessible, and smart digital health technologies.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technology Overview -->
+    <div id="technology" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Innovations</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Our Health Technologies
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+               We create pioneering solutions that bring technology and patient care closer together,
+                transforming the future of healthcare.
+
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Tech Card 1 -->
+                    <div class="tech-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                        <div class="bg-blue-50 px-6 py-8">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                </svg>
+                            </div>
+                            <div class="mt-6">
+                                <h3 class="text-lg font-medium text-gray-900">Digital Health Platform</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                A powerful digital ecosystem offering seamless Electronic Health Record (EHR) integration
+                                 combined with AI-driven patient communication tools. Designed to improve empat
+                                hy, accuracy, and accessibility in every interaction.                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 bg-gray-50">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Learn more →</a>
+                        </div>
+                    </div>
+
+                    <!-- Tech Card 2 -->
+                    <div class="tech-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                        <div class="bg-blue-50 px-6 py-8">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                </svg>
+                            </div>
+                            <div class="mt-6">
+                                <h3 class="text-lg font-medium text-gray-900">Bioprocessing Innovation</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Cutting-edge bioprocessing solutions with state-of-the-art labs and equipment for advanced biological production.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 bg-gray-50">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Learn more →</a>
+                        </div>
+                    </div>
+
+                    <!-- Tech Card 3 -->
+                    <div class="tech-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                        <div class="bg-blue-50 px-6 py-8">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                                </svg>
+                            </div>
+                            <div class="mt-6">
+                                <h3 class="text-lg font-medium text-gray-900">Clinical Trial Solutions</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Revolutionary approaches to clinical trials, reducing costs while improving patient outcomes and data accuracy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 bg-gray-50">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Awards & Recognition Section -->
+<div id="awards" class="py-16 bg-gradient-to-r from-blue-50 to-teal-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    <h2 class="text-sm text-blue-600 font-semibold tracking-wide uppercase">Recognition</h2>
+    
+    <p class="mt-2 text-3xl font-bold text-gray-800 sm:text-4xl">
+      Leading the Future of Health Technology
+    </p>
+    
+    <p class="mt-4 max-w-2xl text-lg text-gray-600 mx-auto">
+      Our commitment to innovation and patient-centered care has positioned us as a trusted name in digital health and bioprocessing excellence.
+    </p>
+
+    <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 class="mt-6 text-lg font-semibold text-gray-900 text-center">Innovation Leadership</h3>
+        <p class="mt-2 text-sm text-gray-500 text-center">
+          Recognized for advancing digital health and smart diagnostics.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="mt-6 text-lg font-semibold text-gray-900 text-center">Trusted Excellence</h3>
+        <p class="mt-2 text-sm text-gray-500 text-center">
+          Setting standards in bioprocessing and clinical innovation.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+          </svg>
+        </div>
+        <h3 class="mt-6 text-lg font-semibold text-gray-900 text-center">Future Focused</h3>
+        <p class="mt-2 text-sm text-gray-500 text-center">
+          Driving the next wave of healthcare transformation.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+
+
+   
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Get in Touch
+                    </h2>
+                    <p class="mt-3 text-lg text-gray-500">
+                        Interested in our technologies or want to collaborate? Reach out to our team.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-base text-gray-500">
+                                    testahealth.connect@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex mt-3">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-base text-gray-500">
+                                    +91 9767354578
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:col-span-1">
+                    <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+                        <div>
+                            <label for="name" class="sr-only">Full name</label>
+                            <input type="text" name="name" id="name" autocomplete="name" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md" placeholder="Full name">
+                        </div>
+                        <div>
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="email" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="organization" class="sr-only">Organization</label>
+                            <input type="text" name="organization" id="organization" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md" placeholder="Organization">
+                        </div>
+                        <div>
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea name="message" id="message" rows="4" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md" placeholder="Message"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        About Testa Center
+                    </h3>
+                    <p class="mt-4 text-gray-300">
+                        An award-winning testbed for biological production and digital health innovation, bridging technology and patient care.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Quick Links
+                    </h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="#about" class="text-base text-gray-300 hover:text-white block">
+                            About
+                        </a>
+                        <a href="#technology" class="text-base text-gray-300 hover:text-white block">
+                            Technology
+                        </a>
+                        <a href="#awards" class="text-base text-gray-300 hover:text-white block">
+                            Awards
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Connect
+                    </h3>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">Terms of Service</a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2024 Testa Center. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                const menu = document.getElementById('mobile-menu');
+                if (!menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission handling
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Here you would typically send the form data to a server
+                alert('Thank you for your message! We will get back to you soon.');
+                contactForm.reset();
+            });
+        }
+    </script>
+    <style>
+  @media (max-width: 640px) {
+    .custom-logo {
+      height: 40px;  /* smaller logo for mobile */
+    }
+    .custom-image {
+      max-width: 100%;  /* image takes full width */
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .custom-logo {
+      height: 60px;
+    }
+    .custom-image {
+      max-width: 80%;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .custom-logo {
+      height: 80px;
+    }
+    .custom-image {
+      max-width: 60%;
+    }
+  }
+</style>
+
+<script>
+  const menuBtn = document.querySelector('nav button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+</html>
